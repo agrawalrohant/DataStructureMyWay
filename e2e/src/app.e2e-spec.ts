@@ -8,10 +8,18 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display header welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to DS-my-way!');
+    expect(page.getTitleText()).toEqual('Welcome to Data Structure my way!!');
   });
+
+  /*it('should have all 4 hyperlinks on left nav for routing', () => {
+    page.navigateTo();
+    expect(page.getStackButtonOnLeftNav("Array").getText()).toEqual('Array');
+    expect(page.getStackButtonOnLeftNav("Stack").getText()).toEqual('Stack');
+    expect(page.getStackButtonOnLeftNav("Queue").getText()).toEqual('Queue');
+    expect(page.getStackButtonOnLeftNav("Tree").getText()).toEqual('Tree');
+  });*/
 
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser

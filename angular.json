@@ -93,9 +93,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": [
+              "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           }
         },
         "lint": {
@@ -115,11 +120,12 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "DS-my-way:serve"
+            "devServerTarget": ""
           },
           "configurations": {
-            "production": {
-              "devServerTarget": "DS-my-way:serve:production"
+            "env": {
+              "protractorConfig": "e2e/protractorconf.js",
+              "devServerTarget": ""
             }
           }
         }

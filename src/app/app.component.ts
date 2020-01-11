@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UtilConstants } from './Common/UtilConstants';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DS-my-way';
+  leftNav = UtilConstants.PRIMARY_LEFT_NAV
 }

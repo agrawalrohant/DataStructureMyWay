@@ -1,0 +1,66 @@
+.box{
+    padding: 5px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.box:first-child{
+    border-left: 2px solid black;
+}
+
+.displayBox{
+    margin:10px;
+}
+
+.sizeButton{
+    margin: 5px 0px;
+}
+
+.small-input{
+    width: 50px;
+    margin: 0px 10px;
+}
+
+.bottomContainer{
+    margin: 15px 0px;
+}
+
+
+span.inertedBackground {
+    background: white;
+    padding: 5px;
+    margin: -5px;
+}
+
+span.empty{
+    padding: 5px;
+}
+
+.logsContainer,.operationsContainer{
+    height: calc( 100vh - 275px);
+    overflow-y: auto;
+    /*border: 1px solid #CCC;*/
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+.displayArea{
+    text-align: center;
+    border: 1px solid #CCC;
+    background-color: #C0C0C0;
+}
+
+.operation{
+    margin-bottom:5px; 
+}
+
+.warningMsg{
+    background-color: red;
+    color: wheat;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}

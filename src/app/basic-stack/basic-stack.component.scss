@@ -1,0 +1,53 @@
+.box{
+    padding: 5px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.box:first-child{
+    border-top: 2px solid white;
+}
+
+.displayBox{
+    margin:10px;
+}
+
+.small-input{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.bottomContainer{
+    margin: 15px 0px;
+}
+
+.logsContainer,.operationsContainer{
+    height: 250px;
+    overflow-y: auto;
+    /*border: 1px solid #CCC;*/
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+.displayArea{
+    text-align: center;
+    border: 1px solid #CCC;
+    background-color: #C0C0C0;
+}
+
+.operation{
+    margin-bottom:5px; 
+}
+
+.warningMsg{
+    background-color: red;
+    color: wheat;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}

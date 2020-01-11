@@ -1,0 +1,32 @@
+<h4><small>Stack</small></h4>
+
+<div *ngIf="warningMsg" class="warningMsg">Warning : {{warningMsg}}
+        <button (click)="closeWarning()" type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+</div>
+
+<div class="displayArea">
+    Current Stack:<br/>
+    <div class="displayBox">
+    <div class="box" *ngFor="let n of arr">{{n}}</div>
+    </div>
+    <div>Current Size : {{size}}</div>
+</div>
+<div class="row bottomContainer">
+    <div class="col-5 operationsContainer">
+        <form>
+        <h5>Opertations :</h5> 
+        <div class="operation">
+            <button type="button" class="btn btn-primary insertButton" (click)="insert(insertNum)">Insert</button>Number : <input required class="small-input" #insertNum type="number"/> 
+        </div>
+        <div>
+        <button type="button" class="btn btn-danger deleteButton"  (click)="delete()">Delete</button>
+        </div>
+    </form>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-6 logsContainer">
+            <app-simple-logs [logMessages]="logMessages"></app-simple-logs>
+    </div>
+</div>
